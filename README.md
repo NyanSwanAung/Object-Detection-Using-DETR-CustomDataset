@@ -2,7 +2,7 @@
 Training DETR on Custom Dataset for Object Detection
 
 ## Face Dataset
-In dataloader/face.py, I set the maximum width of images in the random transform to 800 pixels. This should allow for training on most GPUs, but it is advisable to change back to the original 1333 if your GPU can handle it.
+In [dataloader/face.py](https://github.com/NyanSwanAung/Object-Detection-Using-DETR-CustomDataset/blob/main/dataloaders/face.py), I set the maximum width of images in the random transform to 800 pixels. This should allow for training on most GPUs, but it is advisable to change back to the original 1333 if your GPU can handle it.
 
 ## Augmentation methods 
 For train images, 
