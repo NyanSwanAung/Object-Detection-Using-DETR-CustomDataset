@@ -88,15 +88,15 @@ def get_args_parser():
                         help="Relative classification weight of the no-object class")
 
     # dataset parameters
-    parser.add_argument('--dataset_file', default='coco')
+    parser.add_argument('--dataset_file', type=str, required=True)
 
     #parser.add_argument('--coco_path', type=str)
-    
-    parser.add_argument('--data_path', type=str)
-    parser.add_argument('--train_folder', type=str)
-    parser.add_argument('--train_json', type=str)
-    parser.add_argument('--val_folder', type=str)
-    parser.add_argument('--val_json', type=str)
+
+    parser.add_argument('--data_path', type=str, required=True)
+    parser.add_argument('--train_folder', type=str, required=True)
+    parser.add_argument('--train_json', type=str, required=True)
+    parser.add_argument('--val_folder', type=str, required=True)
+    parser.add_argument('--val_json', type=str, required=True)
     ## ****************************** ##
 
 
