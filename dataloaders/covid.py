@@ -150,8 +150,8 @@ def build(image_set, args):
     assert root.exists(), f'provided Covid path {root} does not exist'
     mode = 'instances'
     PATHS = {
-        "train": ("YOUR TRAIN IMAGES PATH", "YOUR TRAIN JSON PATH"),
-        "val": ("YOUR VAL IMAGES PATH", "YOUR VAL JSON PATH"),
+        "train": (args.train_folder, args.train_json),
+        "val": (args.val_folder, args.val_json),
     }
 
     img_folder, ann_file = PATHS[image_set]
