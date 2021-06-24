@@ -6,6 +6,7 @@ from .coco import build as build_coco
 
 ## ********* For face dataset *************** ##
 from .face import build as build_face
+from .covid import build as build_covid
 ## ******************************************##
 
 
@@ -26,6 +27,9 @@ def build_dataset(image_set, args):
     ## ****************************** ##
     if args.dataset_file == 'face':
         return build_face(image_set, args)
+
+    if args.dataset_file == 'siim-covid':
+        return build_covid(image_set, args)
     ## ****************************** ##
 
     if args.dataset_file == 'coco_panoptic':
