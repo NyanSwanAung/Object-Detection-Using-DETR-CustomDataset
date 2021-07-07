@@ -91,6 +91,8 @@ Model Zoo
 
 ## Training and inferencing Steps
 
+Run all the cells of [detr_on_custom_dataset.ipynb]() to train your model without any errors in Google Colaboratory.
+
 Read this [readme](https://github.com/NyanSwanAung/Object-Detection-Using-DETR-CustomDataset/blob/main/TRAINING-and-INFERENCING.md) for full detail.
 
 ## COCO Evaluation Metrics on Validation Dataset 
