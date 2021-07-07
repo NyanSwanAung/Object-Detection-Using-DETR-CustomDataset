@@ -4,13 +4,16 @@
 
 
 This repository includes 
-* Results folder which contains the detected image and video using DETR.
 * Training Pipeline for DETR on Wider Face dataset
-* Wider Face Dataset
+* Wider Face Dataset annotaions and images
 * COCO pretrained weights for DETR
-* Inference code on test dataset 
+* Inferencing on test dataset 
 * Trained weights and inference graph for Wider Face Dataset in [release page](https://github.com/NyanSwanAung/Pothole-Detection-using-MaskRCNN/releases) 
 
+## About Model 
+DETR or DEtection TRansformer is Facebook’s newest addition to the market of available deep learning-based object detection solutions. Very simply, it utilizes the transformer architecture to generate predictions of objects and their position in an image. DETR is a joint Convolutional Neural Network (CNN) and Transformer with a feed-forward network as a head. This architecture allows the network to reliably reason about object relations in the image using the powerful multi-head attention mechanism inherent in the Transformer architecture using features extracted by the CNN.
+
+![DETR Architecutre](https://miro.medium.com/max/1200/1*niV3pN0JvipfJeqmdWN-3g.png)
 
 ## Face Dataset
 
@@ -86,6 +89,14 @@ Model Zoo
 </table>
 
 
+## Training and inferencing Steps
+
+Read this [readme](https://github.com/NyanSwanAung/Object-Detection-Using-DETR-CustomDataset/blob/main/TRAINING-and-INFERENCING.md) for full detail.
+
+## COCO Evaluation Metrics on Validation Dataset 
+
+``` ```
+
 ## Augmentation methods 
 For train images, 
 ``` 
@@ -102,3 +113,11 @@ T.RandomHorizontalFlip(),
 For val images, 
 
 ``` T.RandomResize([800], max_size=800) ```
+
+## References
+
+[DETR Tutorial by thedeepreader](https://github.com/thedeepreader/detr_tutorial)
+
+[Training DETR on your own dataset by Oliver Gyldenberg Hjermitslev](https://towardsdatascience.com/training-detr-on-your-own-dataset-bcee0be05522)
+
+[Facebook AI's original DETR repo](https://github.com/facebookresearch/detr)
