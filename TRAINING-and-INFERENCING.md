@@ -1,19 +1,23 @@
-# Face Detection using DEtection TRansformers from Facebook AI
-![PyTorch 1.5 +](https://img.shields.io/badge/Pytorch-1.5%2B-green)
-![torch vision 0.6 +](https://img.shields.io/badge/torchvision%20-0.6%2B-green)
-
-
 ## Training Steps
+
+In this notebook, you'll need to follow 4 steps in order to train the model
+
+1. Prepare prerequisite
+2. Setup Paths
+3. Train Model
+4. Inferencing on images and video
+
+Note: If you want to edit and add new codes to this notebook, I suggest clone the repo or save the notebook as a copy or else you'll lose your new codes.
 
 ### Step 1 - Prepare Prerequisites 
 
-Clone my github repository
+1.1 Clone my github repository
 ```python
 !git clone https://github.com/NyanSwanAung/Object-Detection-Using-DETR-CustomDataset.git
 %cd Object-Detection-Using-DETR-CustomDataset/
 ```
 
-Download face dataset from my github release page using wget
+1.2 Download face dataset from my github release page using wget
 ```bash
 # Download train images
 !wget https://github.com/NyanSwanAung/Object-Detection-Using-DETR-CustomDataset/releases/download/v1.0/WIDER_train.zip -O datasets/train.zip
@@ -25,12 +29,12 @@ Download face dataset from my github release page using wget
 !wget https://github.com/NyanSwanAung/Object-Detection-Using-DETR-CustomDataset/releases/download/v1.0/wider_face_split.zip -O datasets/annotations.zip
 ```
 
-There is an implemented dataloader and you just need to copy face dataloader to detr/datasets folder. You can modify the dataloader if you want.
+1.3 There is an implemented dataloader and you just need to copy face dataloader to detr/datasets folder. You can modify the dataloader if you want.
 ```bash
 !cp dataloaders/face.py /content/Object-Detection-Using-DETR-CustomDataset/detr/datasets 
 ```
 
-Download pretrained model [DETR	R50 from model zoo](https://github.com/facebookresearch/detr). 
+1.4 Download pretrained model [DETR	R50 from model zoo](https://github.com/facebookresearch/detr). 
 Make folders for pre-trained model and trained weights.
 ``` bash
 !mkdir detr/weights
@@ -38,7 +42,7 @@ Make folders for pre-trained model and trained weights.
 !wget https://dl.fbaipublicfiles.com/detr/detr-r50-e632da11.pth -O detr/weights/detr-r50-e632da11.pth
 ```
 
-Install COCO API for evaluation 
+1.5 Install COCO API for evaluation 
 ```bash
 !pip install -U 'git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI'
 ```
@@ -58,7 +62,7 @@ The original Wider Face Dataset contains images and .mat for annotations. In ord
   |---- ....
 ```
 
-There is a script [datasets/face_to_coco.py](https://github.com/NyanSwanAung/Object-Detection-Using-DETR-CustomDataset/blob/main/datasets/face_to_coco.py) which converts wider face dataset into COCO formatted dataset. Just simply run the cell and you will get train.json and val.json.
+1.6 There is a script [datasets/face_to_coco.py](https://github.com/NyanSwanAung/Object-Detection-Using-DETR-CustomDataset/blob/main/datasets/face_to_coco.py) which converts wider face dataset into COCO formatted dataset. Just simply run the cell and you will get train.json and val.json.
 
 Before running the script, you need to set your dataset path in line 27 and 28 of the script.
 ```python
@@ -68,7 +72,7 @@ Before running the script, you need to set your dataset path in line 27 and 28 o
 28.         gt_path = os.path.join("datasets/wider_face_split/wider_face_{}.mat".format(phase))
 ```
 
-After setting up, run the script **face_to_coco.py**
+1.7 After setting up, run the script **face_to_coco.py**
 
 ```bash
 !python datasets/face_to_coco.py
@@ -102,7 +106,7 @@ PRETRAINED_MODEL = 'detr/weights/detr-r50-e632da11.pth'
 
 ### Step 3 - Train Model
 
-Run main.py to train the model. If you want to see optional arguments and the meaning of arguments, run the code below.
+To train the model, you'll need to run **detr/main.py** from with required arguments. If you want to see supported arguments and the definition of arguments, run below code.
 ```
 !python detr/main.py --help
 ```
