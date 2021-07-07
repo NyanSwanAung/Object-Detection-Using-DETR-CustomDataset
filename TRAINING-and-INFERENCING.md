@@ -77,7 +77,7 @@ After setting up, run the script **face_to_coco.py**
 !mv train.json datasets && mv val.json datasets
 ```
 
-After successful data prepartion, you will get datasets folder like this
+After successful data preparation, you will get datasets folder like this
 ```
 datasets
   |---- WIDER_train
