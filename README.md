@@ -115,8 +115,6 @@ IoU metric: bbox
 ![](https://raw.githubusercontent.com/NyanSwanAung/Object-Detection-Using-DETR-CustomDataset/main/assets/metrics1.png)
 ![](https://raw.githubusercontent.com/NyanSwanAung/Object-Detection-Using-DETR-CustomDataset/main/assets/metrics2.png)
 ![](https://raw.githubusercontent.com/NyanSwanAung/Object-Detection-Using-DETR-CustomDataset/main/assets/metrics3.png)
-![](https://raw.githubusercontent.com/NyanSwanAung/Object-Detection-Using-DETR-CustomDataset/main/assets/metrics4.png)
-
 
 ## Augmentation methods 
 For train images, 
