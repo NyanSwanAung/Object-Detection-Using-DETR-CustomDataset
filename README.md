@@ -111,6 +111,11 @@ IoU metric: bbox
  Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.519
  Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.706
 ```
+## Metrics Visualization 
+![](https://raw.githubusercontent.com/NyanSwanAung/Object-Detection-Using-DETR-CustomDataset/main/assets/metrics1.png)
+![](https://raw.githubusercontent.com/NyanSwanAung/Object-Detection-Using-DETR-CustomDataset/main/assets/metrics2.png)
+![](https://raw.githubusercontent.com/NyanSwanAung/Object-Detection-Using-DETR-CustomDataset/main/assets/metrics3.png)
+
 
 ## Augmentation methods 
 For train images, 
