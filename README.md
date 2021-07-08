@@ -89,7 +89,7 @@ Model Zoo
 
 ## Training and Evaluation Steps
 
-Run all the cells of [detr_custom_dataset.ipynb](https://github.com/NyanSwanAung/Object-Detection-Using-DETR-CustomDataset/blob/main/detr_custom_dataset.ipynb) to train your model without any errors in Google Colaboratory.
+Run all the cells of [detr_custom_dataset.ipynb](https://github.com/NyanSwanAung/Object-Detection-Using-DETR-CustomDataset/blob/main/DETR_custom_dataset.ipynb) to train your model without any errors in Google Colaboratory.
 
 Follow this [readme](https://github.com/NyanSwanAung/Object-Detection-Using-DETR-CustomDataset/blob/main/TRAINING-and-INFERENCING.md) to understand the training pipeline of DETR and evaluation on test images.
 
