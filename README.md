@@ -6,8 +6,9 @@
 This repository includes 
 * Training Pipeline for DETR on Wider Face dataset
 * Wider Face Dataset annotaions and images
-* Inferencing on test dataset 
-* Trained weights and inference graph for Wider Face Dataset in [release page](https://github.com/NyanSwanAung/Pothole-Detection-using-MaskRCNN/releases) 
+* Evaluation on test dataset 
+* Trained weights for Wider Face Dataset in [release page](https://github.com/NyanSwanAung/Pothole-Detection-using-MaskRCNN/releases)
+* Metrics Visualization 
 
 ## About Model 
 DETR or DEtection TRansformer is Facebook’s newest addition to the market of available deep learning-based object detection solutions. Very simply, it utilizes the transformer architecture to generate predictions of objects and their position in an image. DETR is a joint Convolutional Neural Network (CNN) and Transformer with a feed-forward network as a head. This architecture allows the network to reliably reason about object relations in the image using the powerful multi-head attention mechanism inherent in the Transformer architecture using features extracted by the CNN.
