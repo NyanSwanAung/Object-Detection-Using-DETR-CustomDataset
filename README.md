@@ -104,7 +104,7 @@ Follow this [readme](https://github.com/NyanSwanAung/Object-Detection-Using-DETR
 
 ## COCO Evaluation Metrics on Validation Dataset (After 15 epochs of training)
 
-It took me 4:59:45 hours to finish 15 epochs using Tesla P100-PCIE. If you want better accuracy, you can train more epochs.
+It took me 4:59:45 hours to finish 15 epochs with batch_size=16 using Tesla P100-PCIE. If you want better accuracy, you can train more epochs.
 
 ```bash
 IoU metric: bbox
