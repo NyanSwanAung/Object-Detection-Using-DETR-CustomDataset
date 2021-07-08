@@ -97,11 +97,11 @@ Follow this [readme](https://github.com/NyanSwanAung/Object-Detection-Using-DETR
 
 ## Results
 
-![](./assets/results1.png)
-![](./assets/results2.png)
-![](./assets/results3.png)
-![](./assets/results4.png)
-![](./assets/results5.png)
+![](https://raw.githubusercontent.com/NyanSwanAung/Object-Detection-Using-DETR-CustomDataset/main/assets/results1.png)
+![](https://raw.githubusercontent.com/NyanSwanAung/Object-Detection-Using-DETR-CustomDataset/main/assets/results2.png)
+![](https://raw.githubusercontent.com/NyanSwanAung/Object-Detection-Using-DETR-CustomDataset/main/assets/results3.png)
+![](https://raw.githubusercontent.com/NyanSwanAung/Object-Detection-Using-DETR-CustomDataset/main/assets/results4.png)
+![](https://raw.githubusercontent.com/NyanSwanAung/Object-Detection-Using-DETR-CustomDataset/main/assets/results5.png)
 
 
 ## COCO Evaluation Metrics on Validation Dataset (After 15 epochs of training)
