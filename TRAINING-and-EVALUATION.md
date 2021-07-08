@@ -56,7 +56,9 @@ The original Wider Face Dataset contains images and .mat for annotations. In ord
   |---- ....
 ```
 
-1.5 There is a script [datasets/face_to_coco.py](https://github.com/NyanSwanAung/Object-Detection-Using-DETR-CustomDataset/blob/main/datasets/face_to_coco.py) which converts wider face dataset into COCO formatted dataset. Just simply run the cell and you will get train.json and val.json.
+1.5 Dataset Prepartion 
+
+There is a script [datasets/face_to_coco.py](https://github.com/NyanSwanAung/Object-Detection-Using-DETR-CustomDataset/blob/main/datasets/face_to_coco.py) which converts wider face dataset into COCO formatted dataset. Just simply run the cell and you will get train.json and val.json.
 
 Before running the script, you need to set your dataset path in line 27 and 28 of the script.
 ```python
@@ -80,6 +82,7 @@ After successful data preparation, you will get datasets folder like this
 datasets
   |---- WIDER_train
   |---- WIDER_val
+  |---- WIDER_test
   |---- wider_face_split
   |---- train.json
   |---- val.json
