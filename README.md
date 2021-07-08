@@ -2,9 +2,8 @@
 ![PyTorch 1.5 +](https://img.shields.io/badge/Pytorch-1.5%2B-green)
 ![torch vision 0.6 +](https://img.shields.io/badge/torchvision%20-0.6%2B-green)
 
-
 This repository includes 
-* Training Pipeline for DETR on Wider Face dataset
+* Training Pipeline for DETR on Custom dataset
 * Wider Face Dataset annotaions and images
 * Evaluation on test dataset 
 * Trained weights for Wider Face Dataset in [release page](https://github.com/NyanSwanAung/Pothole-Detection-using-MaskRCNN/releases)
@@ -88,8 +87,7 @@ Model Zoo
   </tbody>
 </table>
 
-
-## Training and inferencing Steps
+## Training and Evaluation Steps
 
 Run all the cells of [detr_custom_dataset.ipynb](https://github.com/NyanSwanAung/Object-Detection-Using-DETR-CustomDataset/blob/main/detr_custom_dataset.ipynb) to train your model without any errors in Google Colaboratory.
 
@@ -106,7 +104,9 @@ Follow this [readme](https://github.com/NyanSwanAung/Object-Detection-Using-DETR
 
 ## COCO Evaluation Metrics on Validation Dataset (After 15 epochs of training)
 
-```log
+It took me 4:59:45 hours to finish 15 epochs using Tesla P100-PCIE. If you want better accuracy, you can train more epochs.
+
+```bash
 IoU metric: bbox
  Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.393
  Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.766
